@@ -2,8 +2,13 @@ import HomePge from "../../pages/HomePge"
 import homedata from '../../fixtures/homedata.json'
 
 describe('Homepage landing', () => {
-  it('Open website,create customer detail and edit customer', () => {
+
+  beforeEach(() => {
     HomePge.openURL();
+  });
+
+  it('Open website,create customer detail and edit customer', () => {
+  
     HomePge.clickCreateCustomerButton();
     HomePge.enterCompanyName(homedata.companyName);
     HomePge.selectIndustry('finance');
@@ -18,7 +23,6 @@ describe('Homepage landing', () => {
 
 it('Verify Customer Info', () => {
 
-    HomePge.openURL();
     HomePge.scrollToBottom(); 
     HomePge.editCustomerInfo(); //expected to fail as it doesnt exists
     HomePge.verifyCompanyName('Testing1233');
@@ -29,7 +33,7 @@ it('Verify Customer Info', () => {
 
 
 it('Filter condition and click delete',() =>{
-    HomePge.openURL();
+
 
     HomePge.clickAll();
     HomePge.selectfiltervalue(); 
