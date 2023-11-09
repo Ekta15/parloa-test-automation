@@ -1,0 +1,14 @@
+{
+  "name": "parloa-test-automation",
+  "version": "1.0.0",
+  "description": "automation task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ekta Aneja",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.0"
+  }
+}
