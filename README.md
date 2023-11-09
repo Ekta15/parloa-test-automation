@@ -13,4 +13,6 @@ npm install
 npm install cypress --save-dev
 
 To run the tests issue the below command
+
+
 npm run alltestrun
