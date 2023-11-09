@@ -1,4 +1,4 @@
-import HomePge from "../../pages/HomePge"
+import HomePge from "../../pages/HomePge" 
 import homedata from '../../fixtures/homedata.json'
 
 describe('Homepage landing', () => {
@@ -17,11 +17,10 @@ describe('Homepage landing', () => {
 });
 
 it('Verify Customer Info', () => {
+
     HomePge.openURL();
-
     HomePge.scrollToBottom(); 
-
-    HomePge.editCustomerInfo();
+    HomePge.editCustomerInfo(); //expected to fail as it doesnt exists
     HomePge.verifyCompanyName('Testing1233');
     HomePge.verifyAboutInfoNotEmpty();
     HomePge.saveCustomerInfo();
@@ -31,6 +30,7 @@ it('Verify Customer Info', () => {
 
 it('Filter condition and click delete',() =>{
     HomePge.openURL();
+
     HomePge.clickAll();
     HomePge.selectfiltervalue(); 
     HomePge.editfirstcustomer();

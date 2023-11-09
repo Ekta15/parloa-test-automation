@@ -45,6 +45,7 @@ class HomePge {
     }
   
     clickAll() {
+        
       cy.get('.ant-select-selector:first').click();
     }
   

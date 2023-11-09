@@ -4,11 +4,13 @@
   "description": "automation task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:alltestrun": "cypress run --spec cypress/e2e/tests/*.cy.js"
   },
   "author": "Ekta Aneja",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.5.0"
+    "cypress": "^13.5.0",
+    "cypress-mochawesome-reporter": "^3.6.1"
   }
 }
